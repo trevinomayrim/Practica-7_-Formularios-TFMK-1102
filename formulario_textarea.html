@@ -1,0 +1,66 @@
+<!-- Nombre: Mayrim Kassandra Treviño Fierro -->
+    <!-- Número de control: 1102 -->
+    <!-- Grupo: 5J --><!DOCTYPE html>
+<!-- Declara que es HTML5 -->
+<html lang="es">
+<!-- Idioma español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Acepta caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta a dispositivos móviles -->
+    <title>Formulario con Área de Texto</title>
+    <!-- Nombre de la pestaña -->
+  
+    <style>
+        body {
+            max-width: 800px; /* ancho limitado */
+            margin: 0 auto; /* centrado */
+            padding: 20px; /* espacio interno */
+            font-family: sans-serif; /* letra normal */
+        }
+        form {
+            border: 1px solid #ccc; /* borde */
+            padding: 15px; /* relleno */
+            border-radius: 8px; /* redondeado */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario con área de texto</h1>
+    <!-- Título de la página -->
+
+    <form action="" method="post">
+        <!-- Abre el formulario -->
+
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <!-- Campo corto para el nombre -->
+
+        <br><br>
+
+        Ingresa tu correo:
+        <input type="email" name="correo">
+        <!-- type="email" = revisa que tenga formato de correo con @ -->
+        <!-- Ayuda a no escribir mal la dirección -->
+
+        <br><br>
+
+        Ingresa tus comentarios:
+        <textarea name="comentarios" rows="3" cols="30"></textarea>
+        <!-- <textarea> = recuadro grande para escribir varias líneas -->
+        <!-- DISTINTO a input: tiene etiqueta de apertura y cierre -->
+        <!-- rows="3" = cantidad de renglones visibles -->
+        <!-- cols="30" = ancho en cantidad de caracteres -->
+
+        <br><br>
+
+        <input type="submit" value="enviar">
+        <!-- Botón de envío -->
+        <input type="reset" value="borrar">
+        <!-- Botón para limpiar todo -->
+    </form>
+
+</body>
+</html>

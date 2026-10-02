@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Documento HTML5 -->
+<html lang="es">
+<!-- Idioma español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Acepta todos los caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se ve bien en cualquier dispositivo -->
+    <title>Formulario con Archivos</title>
+    <!-- Título de pestaña -->
+    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
+    <!-- Número de control: 1102 -->
+    <!-- Grupo: 5J -->
+    <style>
+        body {
+            max-width: 800px; /* ancho limitado */
+            margin: 0 auto; /* centrado */
+            padding: 20px; /* espacio interno */
+            font-family: sans-serif; /* letra normal */
+        }
+        form {
+            border: 1px solid #ccc; /* borde gris */
+            padding: 15px; /* relleno */
+            border-radius: 8px; /* esquinas redondas */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario para subir archivos</h1>
+    <!-- Título principal -->
+
+    <form action="" method="post">
+        <!-- Área del formulario -->
+
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <!-- Campo de texto -->
+
+        <br><br>
+
+        Selecciona tu archivo:
+        <input type="file" name="archivo">
+        <!-- type="file" = abre una ventana de tu computadora -->
+        <!-- Permite elegir un documento, imagen o carpeta -->
+        <!-- Muestra el nombre del archivo que seleccionaste -->
+
+        <br><br>
+
+        <input type="submit" value="enviar">
+        <!-- Envía el archivo junto con los demás datos -->
+        <input type="reset" value="borrar">
+        <!-- Quita el archivo seleccionado -->
+    </form>
+
+</body>
+</html>

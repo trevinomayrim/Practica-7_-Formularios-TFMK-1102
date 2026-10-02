@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Tipo de documento -->
+<html lang="es">
+<!-- Idioma -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Reconocimiento de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajuste de pantalla -->
+    <title>Formulario con Lista</title>
+    <!-- Nombre en pestaña -->
+    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
+    <!-- Número de control: 1102 -->
+    <!-- Grupo: 5J -->
+    <style>
+        body {
+            max-width: 800px; /* no ocupa toda la pantalla */
+            margin: 0 auto; /* centrado */
+            padding: 20px; /* margen interno */
+            font-family: sans-serif; /* tipo de letra */
+        }
+        form {
+            border: 1px solid #ccc; /* borde */
+            padding: 15px; /* espacio interno */
+            border-radius: 8px; /* redondeado */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario con lista de selección</h1>
+    <!-- Título -->
+
+    <form action="" method="post">
+        <!-- Formulario -->
+
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <!-- Campo para nombre -->
+
+        <br><br>
+
+        Selecciona tu país:
+        <select name="pais">
+            <!-- <select> = crea una lista que se despliega hacia abajo -->
+            <!-- name = identifica qué opción se eligió -->
+
+            <option value="1">Argentina</option>
+            <!-- <option> = cada opción que aparece en la lista -->
+            <!-- value="1" = código que se envía al elegir esta opción -->
+            <!-- El texto entre etiquetas es lo que ve el usuario -->
+
+            <option value="2">España</option>
+            <option value="3">México</option>
+            <option value="4">Guatemala</option>
+            <option value="5">Honduras</option>
+            <option value="6">El Salvador</option>
+            <option value="7">Venezuela</option>
+            <option value="8">Colombia</option>
+        </select>
+        <!-- Cierra la lista -->
+
+        <br><br>
+
+        <input type="submit" value="enviar">
+        <!-- Envía la selección -->
+        <input type="reset" value="borrar">
+        <!-- Regresa a estado inicial -->
+    </form>
+
+</body>
+</html>

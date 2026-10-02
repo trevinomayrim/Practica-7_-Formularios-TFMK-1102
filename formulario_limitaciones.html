@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Documento HTML5 -->
+<html lang="es">
+<!-- Idioma -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Reconocimiento de letras especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se adapta a cualquier pantalla -->
+    <title>Formulario con Limitaciones</title>
+    <!-- Título de pestaña -->
+    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
+    <!-- Número de control: 1102 -->
+    <!-- Grupo: 5J -->
+    <style>
+        body {
+            max-width: 800px; /* ancho máximo */
+            margin: 0 auto; /* centrado */
+            padding: 20px; /* espacio interno */
+            font-family: sans-serif; /* tipo de letra */
+        }
+        form {
+            border: 1px solid #ccc; /* borde */
+            padding: 15px; /* relleno */
+            border-radius: 8px; /* redondeado */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario con limitaciones</h1>
+    <!-- Título -->
+
+    <form action="" method="post">
+        <!-- Formulario -->
+
+        Ingresa tu nombre:
+        <input type="text" name="nombre" disabled value="No se puede editar">
+        <!-- disabled = CAMPO BLOQUEADO -->
+        <!-- Se ve el texto pero NO se puede escribir ni cambiar nada -->
+        <!-- value = texto que aparece ya escrito por defecto -->
+        <!-- Dato NO se envía -->
+
+        <br><br>
+
+        Contraseña (máximo 5 caracteres):
+        <input type="password" name="pass" maxlength="5">
+        <!-- maxlength="5" = límite de cuántas letras se pueden escribir -->
+        <!-- Aquí solo deja escribir hasta 5 caracteres -->
+
+        <br><br>
+
+        Comentarios (solo lectura):
+        <textarea name="comentarios" readonly>Este texto no se puede cambiar</textarea>
+        <!-- readonly = SOLO LECTURA -->
+        <!-- Se ve el texto, se puede copiar pero NO se puede modificar -->
+        <!-- DIFERENTE a disabled: ESTE dato SÍ se envía al enviar el formulario -->
+
+        <br><br>
+
+        <input type="submit" value="enviar">
+        <!-- Envía los datos que sí se pueden mandar -->
+    </form>
+
+</body>
+</html>

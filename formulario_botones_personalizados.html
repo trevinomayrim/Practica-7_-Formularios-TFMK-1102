@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Indica que este es un documento versión HTML5 -->
+<html lang="es">
+<!-- <html> = etiqueta principal de todo el documento -->
+<!-- lang="es" = idioma del contenido en español -->
+<head>
+    <!-- <head> = sección de configuración, no se ve en la pantalla -->
+    <meta charset="UTF-8">
+    <!-- charset = reconoce tildes, ñ y símbolos especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport = ajusta el tamaño para que se vea bien en celulares -->
+    <title>Formulario con Botones Personalizados</title>
+    <!-- <title> = texto que aparece en la pestaña del navegador -->
+    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
+    <!-- Número de control: 1102 -->
+    <!-- Grupo: 5J -->
+    <!-- Enlace para usar iconos de la librería Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- <link> = conecta un archivo externo con diseños -->
+    <style>
+        body {
+            max-width: 800px; /* ancho máximo, no ocupa toda la pantalla */
+            margin: 0 auto; /* centra todo en la pantalla */
+            padding: 20px; /* espacio alrededor del contenido */
+            font-family: sans-serif; /* tipo de letra normal */
+        }
+        form {
+            border: 1px solid #ccc; /* línea gris alrededor del formulario */
+            padding: 15px; /* espacio por dentro del borde */
+            border-radius: 8px; /* esquinas redondeadas */
+        }
+        button {
+            padding: 8px 16px; /* tamaño del botón por dentro */
+            margin: 5px; /* espacio entre botones */
+            cursor: pointer; /* cambia el cursor a mano al pasar encima */
+        }
+    </style>
+</head>
+<body>
+<!-- <body> = TODO lo que se ve en la página va aquí -->
+
+    <h1>Formulario con botones personalizados</h1>
+    <!-- <h1> = título principal, el más grande -->
+
+    <form action="" method="post">
+        <!-- <form> = crea el área del formulario -->
+        <!-- action="" = a dónde se envían los datos, vacío = misma página -->
+        <!-- method="post" = forma segura de enviar los datos -->
+
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <!-- <input> = campo para escribir -->
+        <!-- type="text" = acepta letras, números y signos -->
+        <!-- name="nombre" = nombre del dato para identificarlo al enviar -->
+
+        <br><br>
+        <!-- <br> = salto de línea -->
+
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+        <!-- <button> = crea un botón con diseño personalizado -->
+        <!-- type="submit" = envía los datos del formulario al hacer clic -->
+        <!-- El texto "Enviar" aparece dentro del botón -->
+        <!-- <i> = etiqueta para el icono, class = qué icono mostrar -->
+
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+        <!-- type="reset" = borra todo lo escrito y deja vacíos los campos -->
+        <!-- Icono de basurero junto a la palabra "Borrar" -->
+    </form>
+    <!-- Cierra el formulario -->
+
+</body>
+</html>
+<!-- Cierra todo el documento -->

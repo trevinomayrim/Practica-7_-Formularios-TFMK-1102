@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Versión HTML5 -->
+<html lang="es">
+<!-- Idioma -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajuste de pantalla -->
+    <title>Formulario Agrupado</title>
+    <!-- Título en pestaña -->
+    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
+    <!-- Número de control: 1102 -->
+    <!-- Grupo: 5J -->
+    <style>
+        body {
+            max-width: 800px; /* no ocupa toda la pantalla */
+            margin: 0 auto; /* centrado */
+            padding: 20px; /* margen interno */
+            font-family: sans-serif; /* tipo de letra */
+        }
+        form {
+            border: 1px solid #ccc; /* borde */
+            padding: 15px; /* espacio interno */
+            border-radius: 8px; /* redondeado */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario con agrupamiento</h1>
+    <!-- Título -->
+
+    <form action="" method="post">
+        <!-- Formulario -->
+
+        <fieldset>
+            <!-- <fieldset> = dibuja un recuadro alrededor de varios campos -->
+            <!-- Sirve para separar información por temas -->
+
+            <legend>Datos personales</legend>
+            <!-- <legend> = título que aparece DENTRO del borde del recuadro -->
+            <!-- Indica de qué trata la información de este grupo -->
+
+            Nombre y apellido:
+            <input type="text" name="nombre_apellido"><br><br>
+            <!-- Campo de texto -->
+
+            Fecha de nacimiento:
+            <input type="date" name="fecha_nacimiento">
+            <!-- type="date" = muestra un calendario para elegir la fecha -->
+            <!-- No se escribe, se elige con clic -->
+        </fieldset>
+        <!-- Cierra el primer recuadro -->
+
+        <br>
+
+        <fieldset>
+            <!-- Segundo recuadro para información distinta -->
+            <legend>Datos de estudio</legend>
+            <!-- Título del segundo grupo -->
+
+            Nombre de la escuela:
+            <input type="text" name="escuela"><br><br>
+
+            Fecha de egreso:
+            <input type="date" name="fecha_egreso">
+            <!-- Otro calendario -->
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="enviar">
+        <!-- Envía todos los campos de ambos recuadros -->
+        <input type="reset" value="borrar">
+        <!-- Limpia todo -->
+    </form>
+
+</body>
+</html>

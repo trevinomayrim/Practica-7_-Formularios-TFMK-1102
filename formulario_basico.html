@@ -1,0 +1,65 @@
+<!-- Nombre: Mayrim Kassandra Treviño Fierro -->
+<!-- Número de control: 1102 -->
+<!DOCTYPE html>
+<html lang="es">
+<!-- lang="es" = indica que el contenido está en idioma español -->
+<head>
+  
+    <meta charset="UTF-8">
+    <!-- <meta> = da información al navegador -->
+    <!-- charset="UTF-8" = reconoce letras como ñ, tildes y símbolos especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport = hace que la página se vea bien en celulares, no se vea chiquita -->
+
+    <title>Formulario Básico</title>
+    <!-- <title> = el texto que aparece arriba, en la pestaña del navegador -->
+    
+    <style>
+        /* <style> = aquí van los diseños, colores y tamaños */
+        body {
+            max-width: 800px; /* ancho  */
+            margin: 0 auto; /* centra  */
+            padding: 20px; /* espacio alrededor  */
+            font-family: sans-serif; /* tipo de letra */
+        }
+        form {
+            border: 1px solid #ccc; /* línea gris alrededor del formulario */
+            padding: 15px; /* espacio por dentro del borde */
+            border-radius: 8px; /* esquinas redondeadas */
+        }
+    </style>
+</head>
+<body>
+<!-- <body> = TODO lo que se ve en la pantalla va aquí dentro -->
+
+    <h1>Formulario Básico</h1>
+    <!-- <h1> = encabezado nivel 1, el título más grande y principal -->
+
+    <form action="" method="post">
+        <!-- <form> = crea el área donde van los campos para escribir -->
+        <!-- action="" = dirección donde se envían los datos, vacío = misma página -->
+        <!-- method="post" = forma de enviar la información, de manera segura -->
+
+        Ingresa tu nombre:
+        <!-- texto le avisa al usuario qué debe escribir -->
+
+        <input type="text" name="nombre" size="20">
+        <!-- <input> = crea un campo para escribir -->
+        <!-- type="text" = acepta letras, números y signos -->
+        <!-- name="nombre" = nombre del dato para identificarlo al enviar -->
+        <!-- size="20" = qué tan ancho se ve el campo en la pantalla -->
+
+        <br><br>
+        <!-- <br> = salto de línea-->
+
+        <input type="submit" value="enviar">
+        <!-- type="submit" = botón especial que manda todos los datos del formulario -->
+        <!-- value="enviar" = el texto que aparece escrito en el botón -->
+    </form>
+   
+
+</body>
+
+</html>
+<!-- </html> = cierra todo el documento, ya no va nada después -->
