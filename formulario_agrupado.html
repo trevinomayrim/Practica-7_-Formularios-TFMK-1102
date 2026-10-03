@@ -1,78 +1,54 @@
- <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
-    <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J -->
+ <!-- Mayrim Kassandra Treviño Fierro - 1102 - 5J -->
 <!DOCTYPE html>
 <html lang="es">
-<!-- Idioma -->
 <head>
     <meta charset="UTF-8">
-    <!-- Codificación -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ajuste de pantalla -->
     <title>Formulario Agrupado</title>
-    <!-- Título en pestaña -->
-    
+  
     <style>
-        body {
-            max-width: 800px; 
-            margin: 0 auto; /* centrado */
-            padding: 20px; /* margen interno */
-            font-family: sans-serif; /* tipo de letra */
-        }
-        form {
-            border: 1px solid #ccc; /* borde */
-            padding: 15px; /* espacio interno */
-            border-radius: 8px; /* redondeado */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+        fieldset { margin: 10px 0; padding: 10px; border-radius: 6px; }
     </style>
 </head>
 <body>
 
     <h1>Formulario con agrupamiento</h1>
-    <!-- Título -->
 
-    <form action="" method="post">
-        <!-- Formulario -->
+    <form action="destino.php" method="post">
+        <!-- Envía a destino.php -->
 
         <fieldset>
-            <!-- <fieldset> = dibuja un recuadro alrededor de varios campos -->
-            <!-- Sirve para separar información por temas -->
+            <!-- fieldset = dibuja un recuadro alrededor de un grupo de campos -->
+            <!-- Sirve para organizar la información por temas -->
 
             <legend>Datos personales</legend>
-            <!-- <legend> = título que aparece DENTRO del borde del recuadro -->
-           
+            <!-- legend = título que aparece adentro del borde del cuadro -->
+
             Nombre y apellido:
-            <input type="text" name="nombre_apellido"><br><br>
-            <!-- Campo de texto -->
+            <input type="text" name="nombre_completo"><br><br>
 
             Fecha de nacimiento:
             <input type="date" name="fecha_nacimiento">
-            <!-- type="date" = calendario para elegir la fecha -->
-            <!-- No se escribe, se elige con clic -->
+            <!-- type="date" = muestra un calendario para elegir la fecha -->
         </fieldset>
-        <!-- Cierra recuadro -->
-
-        <br>
 
         <fieldset>
-            <!-- Segundo recuadro  -->
+            <!-- Segundo recuadro para información distinta -->
             <legend>Datos de estudio</legend>
-            <!-- Título del segundo grupo -->
 
             Nombre de la escuela:
             <input type="text" name="escuela"><br><br>
 
             Fecha de egreso:
             <input type="date" name="fecha_egreso">
-            <!-- Otro calendario -->
         </fieldset>
 
         <br>
 
         <input type="submit" value="enviar">
-        <!-- Envía todos los campos de ambos recuadros -->
         <input type="reset" value="borrar">
-        <!-- Limpia todo -->
     </form>
 
 </body>
