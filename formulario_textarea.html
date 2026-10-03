@@ -1,65 +1,39 @@
-<!-- Nombre: Mayrim Kassandra Treviño Fierro -->
-    <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J --><!DOCTYPE html>
-<!-- Declara que es HTML5 -->
+    <!-- Mayrim Kassandra Treviño Fierro - 1102 - 5J -->
+<!DOCTYPE html>
 <html lang="es">
-<!-- Idioma español -->
 <head>
     <meta charset="UTF-8">
-    <!-- Acepta caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ajusta a dispositivos móviles -->
-    <title>Formulario con Área de Texto</title>
-    <!-- Nombre de la pestaña -->
-  
+    <title>4. Formulario con Área de Texto</title>
+
     <style>
-        body {
-            max-width: 800px; /* ancho limitado */
-            margin: 0 auto; /* centrado */
-            padding: 20px; /* espacio interno */
-            font-family: sans-serif; /* letra normal */
-        }
-        form {
-            border: 1px solid #ccc; /* borde */
-            padding: 15px; /* relleno */
-            border-radius: 8px; /* redondeado */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #999; padding: 18px; border-radius: 8px; }
     </style>
 </head>
 <body>
 
-    <h1>Formulario con área de texto</h1>
-    <!-- Título de la página -->
+    <h1>4. Formulario con Área de Texto</h1>
 
-    <form action="" method="post">
-        <!-- Abre el formulario -->
+    <form action="destino.php" method="post">
 
-        Ingresa tu nombre:
+        Nombre:
         <input type="text" name="nombre">
-        <!-- Campo corto para el nombre -->
 
         <br><br>
 
-        Ingresa tu correo:
-        <input type="email" name="correo">
-        <!-- type="email" = revisa que tenga formato de correo con @ -->
-        <!-- Ayuda a no escribir mal la dirección -->
-
-        <br><br>
-
-        Ingresa tus comentarios:
-        <textarea name="comentarios" rows="3" cols="30"></textarea>
+        Escribe tus comentarios:
+        <br>
+        <textarea name="comentarios" rows="5" cols="40"></textarea>
         <!-- <textarea> = recuadro grande para escribir varias líneas -->
-        <!-- DISTINTO a input: tiene etiqueta de apertura y cierre -->
-        <!-- rows="3" = cantidad de renglones visibles -->
-        <!-- cols="30" = ancho en cantidad de caracteres -->
+        <!-- NO usa etiqueta de cierre en una sola línea como input -->
+        <!-- rows="5" = cantidad de renglones visibles -->
+        <!-- cols="40" = ancho en cantidad de letras -->
 
         <br><br>
 
-        <input type="submit" value="enviar">
-        <!-- Botón de envío -->
-        <input type="reset" value="borrar">
-        <!-- Botón para limpiar todo -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
     </form>
 
 </body>
