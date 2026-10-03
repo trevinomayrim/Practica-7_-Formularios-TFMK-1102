@@ -1,62 +1,43 @@
     <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
     <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J --><!DOCTYPE html>
-<!-- Indica que es un documento versión HTML5 -->
+    <!-- Grupo: 5J -->
+    <!DOCTYPE html>
 <html lang="es">
-<!-- lang = idioma del contenido, es = español -->
 <head>
-    <!-- Aquí va la configuración que no se ve -->
     <meta charset="UTF-8">
-    <!-- charset = reconoce tildes, ñ y caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- viewport = ajusta el tamaño para celulares y pantallas -->
     <title>Formulario de Contraseña</title>
-    <!-- Título que se ve en la pestaña del navegador -->
-   
+    
     <style>
-        body {
-            max-width: 800px; /* no ocupa toda la pantalla */
-            margin: 0 auto; /* centra todo */
-            padding: 20px; /* margen por dentro */
-            font-family: sans-serif; /* tipo de letra */
-        }
-        form {
-            border: 1px solid #ccc; /* borde gris */
-            padding: 15px; /* espacio interno */
-            border-radius: 8px; /* esquinas redondeadas */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
     </style>
 </head>
 <body>
-<!-- Todo lo visible va aquí -->
 
     <h1>Formulario para contraseñas</h1>
-    <!-- Título principal -->
 
-    <form action="" method="post">
-        <!-- Abre el formulario -->
-        <!-- action = a dónde van los datos; method = cómo se envían -->
+    <form action="destino.php" method="post">
+        <!-- action = archivo que recibe los datos -->
+        <!-- method="post" = método de envío -->
 
         Ingresa tu usuario:
         <input type="text" name="usuario">
-        <!-- type="text" = campo de texto normal -->
-        <!-- name = nombre del dato para identificarlo -->
 
         <br><br>
-        <!-- Salto de línea para dejar espacio -->
 
         Ingresa tu contraseña:
         <input type="password" name="pass">
         <!-- type="password" = oculta lo que se escribe con puntos -->
-        <!-- Protege la contraseña para que nadie la vea por encima -->
+        <!-- Protege la contraseña de miradas ajenas -->
 
         <br><br>
 
         <input type="submit" value="enviar">
-        <!-- submit = botón para mandar la información -->
+        <!-- Botón de envío -->
 
         <input type="reset" value="borrar">
-        <!-- type="reset" = borra TODO lo que se escribió y deja vacío -->
+        <!-- type="reset" = borra todo lo escrito y deja vacíos los campos -->
     </form>
 
 </body>
