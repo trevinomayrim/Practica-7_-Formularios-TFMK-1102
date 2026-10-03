@@ -1,65 +1,42 @@
+ <!-- Mayrim Kassandra Treviño Fierro - 1102 - 5J -->
 <!DOCTYPE html>
-<!-- Versión de HTML -->
 <html lang="es">
-<!-- Idioma del texto -->
 <head>
     <meta charset="UTF-8">
-    <!-- Símbolos y letras especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Para que se vea bien en celular -->
-    <title>Formulario con Botones de Opción</title>
-    <!-- Título de la pestaña -->
-    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
-    <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J -->
+    <title>Formulario con Radioboton</title>
     <style>
-        body {
-            max-width: 800px; /* ancho máximo */
-            margin: 0 auto; /* centro */
-            padding: 20px; /* espacio interno */
-            font-family: sans-serif; /* fuente */
-        }
-        form {
-            border: 1px solid #ccc; /* borde */
-            padding: 15px; /* relleno */
-            border-radius: 8px; /* redondeado */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
     </style>
 </head>
 <body>
 
     <h1>Formulario con Radioboton</h1>
-    <!-- Encabezado principal -->
 
-    <form action="" method="post">
-        <!-- Área del formulario -->
+    <form action="destino.php" method="post">
+        <!-- Archivo que recibe los datos -->
 
         Ingresa tu nombre:
         <input type="text" name="nombre">
-        <!-- Campo de texto -->
 
         <br><br>
 
         Selecciona el máximo de estudios que tienes:
         <br><br>
 
-        <input type="radio" name="estudios" value="1"> Sin estudios <br><br>
+        <input type="radio" name="estudios" value="ninguno"> Sin estudios <br>
         <!-- type="radio" = botón circular -->
-        <!-- SOLO SE PUEDE ELEGIR UNA OPCIÓN -->
-        <!-- IMPORTANTE: TODOS deben tener el MISMO name para que funcione -->
-        <!-- value="1" = el dato que se envía cuando se elige esta opción -->
+        <!-- solo una opción -->
+        <!-- TODOS MISMO name para que funcione -->
+        <!-- value = dato que se envía al elegir la opción -->
 
-        <input type="radio" name="estudios" value="2"> Primaria <br><br>
-        <!-- Mismo nombre "estudios" → si eliges esta, se desmarca la anterior -->
-
-        <input type="radio" name="estudios" value="3"> Secundaria <br><br>
-
-        <input type="radio" name="estudios" value="4"> Preparatoria <br><br>
+        <input type="radio" name="estudios" value="primaria"> Primaria <br>
+        <input type="radio" name="estudios" value="secundaria"> Secundaria <br>
+        <input type="radio" name="estudios" value="preparatoria"> Preparatoria <br><br>
 
         <input type="submit" value="enviar">
-        <!-- Envía la opción elegida -->
         <input type="reset" value="borrar">
-        <!-- Desmarca todo -->
     </form>
 
 </body>
