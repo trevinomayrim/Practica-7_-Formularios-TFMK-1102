@@ -1,71 +1,51 @@
+    <!-- Mayrim Kassandra Treviño Fierro - 1102 - 5J -->
 <!DOCTYPE html>
-<!-- Tipo de documento -->
 <html lang="es">
-<!-- Idioma -->
 <head>
     <meta charset="UTF-8">
-    <!-- Reconocimiento de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ajuste de pantalla -->
     <title>Formulario con Lista</title>
-    <!-- Nombre en pestaña -->
-    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
-    <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J -->
+    
     <style>
-        body {
-            max-width: 800px; /* no ocupa toda la pantalla */
-            margin: 0 auto; /* centrado */
-            padding: 20px; /* margen interno */
-            font-family: sans-serif; /* tipo de letra */
-        }
-        form {
-            border: 1px solid #ccc; /* borde */
-            padding: 15px; /* espacio interno */
-            border-radius: 8px; /* redondeado */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
     </style>
 </head>
 <body>
 
     <h1>Formulario con lista de selección</h1>
-    <!-- Título -->
 
-    <form action="" method="post">
-        <!-- Formulario -->
+    <form action="destino.php" method="post">
+        <!-- Envía a destino.php -->
 
         Ingresa tu nombre:
         <input type="text" name="nombre">
-        <!-- Campo para nombre -->
 
         <br><br>
 
         Selecciona tu país:
         <select name="pais">
-            <!-- <select> = crea una lista que se despliega hacia abajo -->
+            <!-- select = crea una lista desplegable -->
             <!-- name = identifica qué opción se eligió -->
 
-            <option value="1">Argentina</option>
-            <!-- <option> = cada opción que aparece en la lista -->
-            <!-- value="1" = código que se envía al elegir esta opción -->
-            <!-- El texto entre etiquetas es lo que ve el usuario -->
+            <option value="argentina">Argentina</option>
+            <!-- option = cada opción que aparece en la lista -->
+            <!-- value = código que se envía al elegir esta opción -->
 
-            <option value="2">España</option>
-            <option value="3">México</option>
-            <option value="4">Guatemala</option>
-            <option value="5">Honduras</option>
-            <option value="6">El Salvador</option>
-            <option value="7">Venezuela</option>
-            <option value="8">Colombia</option>
+            <option value="espana">España</option>
+            <option value="mexico">México</option>
+            <option value="guatemala">Guatemala</option>
+            <option value="honduras">Honduras</option>
+            <option value="elsalvador">El Salvador</option>
+            <option value="venezuela">Venezuela</option>
+            <option value="colombia">Colombia</option>
         </select>
         <!-- Cierra la lista -->
 
         <br><br>
 
         <input type="submit" value="enviar">
-        <!-- Envía la selección -->
         <input type="reset" value="borrar">
-        <!-- Regresa a estado inicial -->
     </form>
 
 </body>
