@@ -1,64 +1,35 @@
+   <!-- Mayrim Kassandra Treviño Fierro - 1102 - 5J -->
 <!DOCTYPE html>
-<!-- Declara que es un documento HTML5 -->
 <html lang="es">
-<!-- lang = idioma en español -->
 <head>
     <meta charset="UTF-8">
-    <!-- charset = reconoce caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- viewport = ajusta para pantallas pequeñas -->
-    <title>Formulario con Campos Ocultos</title>
-    <!-- Título de la pestaña -->
-    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
-    <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <!-- Enlace para usar iconos -->
+    <title>Formulario con Campo Oculto</title>
+    
     <style>
-        body {
-            max-width: 800px; /* no ocupa toda la pantalla */
-            margin: 0 auto; /* centrado */
-            padding: 20px; /* espacio interno */
-            font-family: sans-serif; /* tipo de letra */
-        }
-        form {
-            border: 1px solid #ccc; /* borde gris */
-            padding: 15px; /* relleno */
-            border-radius: 8px; /* redondeado */
-        }
-        button {
-            padding: 8px 16px; /* tamaño del botón */
-            margin: 5px; /* separación entre botones */
-            cursor: pointer; /* cursor de mano */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
     </style>
 </head>
 <body>
 
-    <h1>Formulario con campos ocultos</h1>
-    <!-- Título principal -->
+    <h1>Formulario con campo oculto</h1>
 
-    <form action="" method="post">
-        <!-- Abre el formulario -->
+    <form action="destino.php" method="post">
+        <!-- Envía a destino.php -->
 
-        <input type="hidden" name="hora" value="3:30">
-        <!-- type="hidden" = CAMPO OCULTO -->
-        <!-- NO se ve en la pantalla, el usuario no lo ve -->
-        <!-- Se envía igual que los demás datos al enviar el formulario -->
-        <!-- Sirve para mandar información que el usuario no necesita ver -->
-        <!-- name="hora" = nombre del dato -->
-        <!-- value="3:30" = el valor que se envía automáticamente -->
+        <input type="hidden" name="hora_envio" value="19:55">
+        <!-- type="hidden" = campo oculto -->
+        <!-- No se ve en la pantalla pero Si se envía al enviar el formulario -->
+        <!-- Sirve para pasar información automática -->
 
         Ingresa tu nombre:
         <input type="text" name="nombre">
-        <!-- Campo visible para que el usuario escriba su nombre -->
 
         <br><br>
 
-        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
-        <!-- Botón para enviar: manda el nombre Y la hora oculta juntos -->
-        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
-        <!-- Borra solo lo visible, no afecta el campo oculto -->
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
     </form>
 
 </body>
