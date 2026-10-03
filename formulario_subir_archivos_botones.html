@@ -1,64 +1,35 @@
+  <!-- Mayrim Kassandra Treviño Fierro - 1102 - 5J -->
 <!DOCTYPE html>
-<!-- Versión HTML5 -->
 <html lang="es">
-<!-- Idioma español -->
 <head>
     <meta charset="UTF-8">
-    <!-- Acepta caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ajusta a dispositivos móviles -->
-    <title>Formulario Subir Archivos con Botones</title>
-    <!-- Nombre de la pestaña -->
-    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
-    <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <!-- Librería de iconos -->
+    <title>Formulario con Botones</title>
+  
     <style>
-        body {
-            max-width: 800px; /* ancho limitado */
-            margin: 0 auto; /* centrado */
-            padding: 20px; /* margen interno */
-            font-family: sans-serif; /* tipo de letra */
-        }
-        form {
-            border: 1px solid #ccc; /* borde */
-            padding: 15px; /* espacio por dentro */
-            border-radius: 8px; /* esquinas redondas */
-        }
-        button {
-            padding: 8px 16px; /* tamaño del botón */
-            margin: 5px; /* separación entre botones */
-            cursor: pointer; /* cursor de mano al pasar */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+        button { padding: 8px 16px; margin: 5px; cursor: pointer; }
     </style>
 </head>
 <body>
 
-    <h1>Formulario con archivos y botones</h1>
-    <!-- Título -->
+    <h1>Formulario con botones personalizados</h1>
 
-    <form action="" method="post">
-        <!-- Formulario -->
+    <form action="destino.php" method="post">
+        <!-- Envía a destino.php -->
 
         Ingresa tu nombre:
         <input type="text" name="nombre">
-        <!-- Campo para el nombre -->
 
         <br><br>
 
-        Selecciona tu archivo:
-        <input type="file" name="archivo">
-        <!-- type="file" = abre una ventana para elegir un archivo de tu computadora -->
-        <!-- Puedes elegir imágenes, documentos, PDF, etc. -->
-        <!-- Muestra el nombre del archivo seleccionado -->
+        <button type="submit">Enviar</button>
+        <!-- button = botón personalizado -->
+        <!-- type="submit" = envía los datos al hacer clic -->
 
-        <br><br>
-
-        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
-        <!-- Envía el nombre Y el archivo seleccionado -->
-        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
-        <!-- Quita el archivo seleccionado y limpia el nombre -->
+        <button type="reset">Borrar</button>
+        <!-- type="reset" = limpia todos los campos -->
     </form>
 
 </body>
