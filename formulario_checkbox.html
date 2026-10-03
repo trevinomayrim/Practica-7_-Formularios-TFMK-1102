@@ -1,62 +1,41 @@
+  <!-- Mayrim Kassandra Treviño Fierro - 1102 - 5J -->
 <!DOCTYPE html>
-<!-- Tipo de documento HTML5 -->
 <html lang="es">
-<!-- Idioma -->
 <head>
     <meta charset="UTF-8">
-    <!-- Codificación -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ajuste de pantalla -->
     <title>Formulario con Casillas</title>
-    <!-- Título en pestaña -->
-    <!-- Nombre: Mayrim Kassandra Treviño Fierro -->
-    <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J -->
+    
     <style>
-        body {
-            max-width: 800px; /* no ocupa toda la pantalla */
-            margin: 0 auto; /* centrado */
-            padding: 20px; /* margen interno */
-            font-family: sans-serif; /* tipo de letra */
-        }
-        form {
-            border: 1px solid #ccc; /* línea alrededor */
-            padding: 15px; /* espacio por dentro */
-            border-radius: 8px; /* esquinas redondas */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
     </style>
 </head>
 <body>
 
     <h1>Formulario con checkbox</h1>
-    <!-- Título principal -->
 
-    <form action="" method="post">
-        <!-- Abre el formulario -->
+    <form action="destino.php" method="post">
+        <!-- Los datos se envían a destino.php -->
 
         Ingresa tu nombre:
         <input type="text" name="nombre">
-        <!-- Campo para el nombre -->
 
         <br><br>
 
         Selecciona los lenguajes que conozcas:
         <br><br>
 
-        <input type="checkbox" name="Java"> Java <br><br>
+        <input type="checkbox" name="lenguaje" value="Java"> Java <br>
         <!-- type="checkbox" = casilla que se marca o desmarca -->
-        <!-- SE PUEDE ELEGIR VARIAS A LA VEZ, no se desmarcan entre sí -->
-        <!-- Cada casilla es independiente aunque se llamen igual -->
+        <!-- Permite elegir varias opciones al mismo tiempo -->
+        <!-- value = el valor que se envía cuando se marca esta opción -->
 
-        <input type="checkbox" name="Python"> Python <br><br>
-        <!-- Otra opción, se puede marcar junto con la anterior -->
-
-        <input type="checkbox" name="Csharp"> C# <br><br>
-
-        <input type="checkbox" name="Flutter"> Flutter <br><br>
+        <input type="checkbox" name="lenguaje" value="Python"> Python <br>
+        <input type="checkbox" name="lenguaje" value="C#"> C# <br>
+        <input type="checkbox" name="lenguaje" value="Flutter"> Flutter <br><br>
 
         <input type="submit" value="enviar">
-        <!-- Botón para enviar todo -->
     </form>
 
 </body>
