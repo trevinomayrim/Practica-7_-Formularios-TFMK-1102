@@ -1,57 +1,38 @@
-<!-- Nombre: Mayrim Kassandra Treviño Fierro -->
-    <!-- Número de control: 1102 -->
-    <!-- Grupo: 5J -->
+<!-- Mayrim Kassandra Treviño Fierro - 1102 - 5J -->
 <!DOCTYPE html>
 <html lang="es">
-<!-- Idioma español -->
 <head>
     <meta charset="UTF-8">
-    <!-- Acepta todos los caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Se ve bien en cualquier dispositivo -->
     <title>Formulario con Archivos</title>
-    <!-- Título de pestaña -->
    
     <style>
-        body {
-            max-width: 800px; /* ancho */
-            margin: 0 auto; /* centrado */
-            padding: 20px; /* espacio interno */
-            font-family: sans-serif; /* letra normal */
-        }
-        form {
-            border: 1px solid #ccc; /* borde gris */
-            padding: 15px; /* relleno */
-            border-radius: 8px; /* esquinas redondas */
-        }
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: sans-serif; }
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
     </style>
 </head>
 <body>
 
     <h1>Formulario para subir archivos</h1>
-    <!-- Título principal -->
 
-    <form action="" method="post">
-        <!-- Área del formulario -->
+    <form action="destino.php" method="post" enctype="multipart/form-data">
+        <!-- enctype="multipart/form-data" = obligatorio para enviar archivos -->
+        <!-- Permite que el formulario maneje documentos e imágenes -->
 
         Ingresa tu nombre:
         <input type="text" name="nombre">
-        <!-- Campo de texto -->
 
         <br><br>
 
         Selecciona tu archivo:
         <input type="file" name="archivo">
-        <!-- type="file" = abre una ventana de tu computadora -->
-        <!-- Permite elegir un documento imagen o carpeta -->
+        <!-- type="file" = abre ventana para elegir archivo de la computadora -->
 
         <br><br>
 
         <input type="submit" value="enviar">
-        <!-- Envía el archivo junto con los demás datos -->
         <input type="reset" value="borrar">
-        <!-- Quita el archivo seleccionado -->
     </form>
 
 </body>
-</html
+</html>
